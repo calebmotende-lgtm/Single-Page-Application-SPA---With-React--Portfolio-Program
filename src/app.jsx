@@ -6,7 +6,7 @@ import SearchBar from "./components/SearchBar.jsx";
 const initialProjects = [
   {
     id: 1,
-    title: "Simple Portfolio App",
+    title: "SPA Portfolio Platform",
     description: "A clean, basic portfolio page with a short description and a link.",
     tech: ["React", "Vite"],
     link: "https://example.com"
@@ -14,14 +14,14 @@ const initialProjects = [
   {
     id: 2,
     title: "Landing Page Design",
-    description: "A simple landing page concept for a small business.",
+    description: "A modern landing page concept for a tech startup.",
     tech: ["HTML", "CSS"],
     link: "https://example.com/landing"
   },
   {
     id: 3,
-    title: "Static Product Showcase",
-    description: "A basic product showcase with a short summary.",
+    title: "Static Project Showcase",
+    description: "Project showcase with a focus on static content and minimal interactivity.",
     tech: ["JavaScript", "React"],
     link: "https://example.com/product"
   }
@@ -56,7 +56,7 @@ function App() {
     <div className="page-shell">
       <header className="site-header">
         <h1>Portfolio Platform</h1>
-        <p>Single-page React portfolio with a simple project list and search.</p>
+        <p>Single Page Application with React- portfolio.</p>
       </header>
 
       <section className="main-content">
