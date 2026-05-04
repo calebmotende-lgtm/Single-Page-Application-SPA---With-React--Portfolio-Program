@@ -32,36 +32,40 @@ function ProjectForm({ onAdd }) {
 
   return (
     <form className="project-form" onSubmit={handleSubmit}>
+      <h2 style={{ marginTop: 0, marginBottom: '1.5rem', color: 'var(--text-primary)' }}>
+        ➕ Add New Project
+      </h2>
+
       <div className="form-row">
-        <label htmlFor="project-title">Project Title</label>
+        <label htmlFor="project-title">Project Title *</label>
         <input
           id="project-title"
           value={form.title}
           onChange={(event) => updateField("title", event.target.value)}
-          placeholder="Project title"
+          placeholder="Enter your project title"
           required
         />
       </div>
 
       <div className="form-row">
-        <label htmlFor="project-description">Description</label>
+        <label htmlFor="project-description">Description *</label>
         <textarea
           id="project-description"
           value={form.description}
           onChange={(event) => updateField("description", event.target.value)}
-          placeholder="Short description"
+          placeholder="Describe your project briefly..."
           rows="4"
           required
         />
       </div>
 
       <div className="form-row">
-        <label htmlFor="project-tech">Technologies</label>
+        <label htmlFor="project-tech">Technologies Used</label>
         <input
           id="project-tech"
           value={form.tech}
           onChange={(event) => updateField("tech", event.target.value)}
-          placeholder="React, CSS"
+          placeholder="React, Node.js, MongoDB (comma-separated)"
         />
       </div>
 
@@ -72,12 +76,12 @@ function ProjectForm({ onAdd }) {
           type="url"
           value={form.link}
           onChange={(event) => updateField("link", event.target.value)}
-          placeholder="https://example.com"
+          placeholder="https://your-project-link.com"
         />
       </div>
 
       <button type="submit" className="submit-button">
-        Save project
+         Save Project
       </button>
     </form>
   );
